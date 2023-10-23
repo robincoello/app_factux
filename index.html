@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Facturación digital">
+    <meta name="keywords" content="factura, digital, factux">
+    <meta name="author" content="Jordan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="50">
+    <link rel="stylesheet" href="styles.css">
+    <!-- fin -->
+
+    <title>Factux</title>
+</head>
+<body>
+
+<h1>FACTUX</h1>
+<h2>Facturas digitales</h2>
+<section>
+    <form name="formulario" action="procesar.js" method="post"><br>
+        <label for="empresa">Nombre de la empresa:
+            <input type="text" name="empresa" id="nombredelaempresa" placeholder="Empresa"><br>
+        </label>
+
+        <label for="producto">Nombre del producto:
+            <input type="text" name="producto" id="nombredelproducto" placeholder="Producto"><br>
+        </label>
+
+        <label for="idtransacion">ID/Número de la transacción:
+            <input type="text" name="idtransacion" id="numerodetransaccion" placeholder="ID/Nº de la transacción"><br>
+        </label>
+
+        <label for="valor">Valor:
+            <input type="number" name="valor" id="precio" placeholder="Precio del producto"><br>
+        </label>
+
+        <label for="descripcion">Descripción del producto:
+            <input type="text" name="descripcion" id="descripciondeproducto" placeholder="Descripción (opcional)"><br>
+        </label>
+
+        <label for="cantidad">Cantidad del producto:
+            <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad del producto"><br>
+        </label>
+
+    </form>
+</section>
+<aside>
+    <form name="nombre" action="cliente.js" method="post"><br>
+        <label for="empresa">Nombre:
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre"><br>
+        </label>
+
+        <label for="direccion">Dirección:
+            <input type="text" name="direccion" id="direccion" placeholder="Dirección"><br>
+        </label>
+
+        <label for="pais">País:
+            <input type="text" name="pais" id="pais" placeholder="País"><br>
+        </label>
+
+        <label for="codigopostal">Código postal:
+            <input type="number" name="codigopostal" id="codigopostal" placeholder="Código Postal"><br>
+        </label>
+
+        <label for="telefono">Número de Teléfono:
+            <input type="tel" name="telefono" id="telefono" placeholder="Nº de teléfono"><br>
+        </label>
+
+        <label for="email">Email:
+            <input type="email" name="email" id="email" placeholder="Email"><br>
+        </label>
+
+        <label for="url">Link de la web:
+            <input type="url" name="murl" id="url" placeholder="Url de la web"><br>
+        </label>
+
+        <label for="metododepago">Método de pago:
+            <select name="metododepago" id="pago">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="americanexpress">American Express</option>
+                <option value="paypal">Paypal</option>
+                <option value="efectivo">Efectivo</option>
+            </select>
+            <br>
+            <!-- Esta opcion queda en prueba
+            <input type="radio" name="metododepago" id="visa" value="visa" checked>Visa<br>
+            <input type="radio" name="metododepago" id="mastercard" value="mastercard">Mastercard<br>
+            <input type="radio" name="metododepago" id="americanexpress" value="american Express">American Express<br>
+            <input type="radio" name="metododepago" id="paypal" value="paypal">Paypal<br>
+            <input type="radio" name="metododepago" id="efectivo" value="efectivo">Efectivo<br> -->
+        </label>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar todo">
+
+    </form>
+</aside>
+
+</body>
+</html>
