@@ -9,6 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="50">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
     <!-- fin -->
 
     <title>Factux</title>
@@ -18,7 +21,8 @@
 <h1>FACTUX</h1>
 <h2>Facturas digitales</h2>
 <section>
-    <form name="formulario" action="procesar.js" method="post"><br>
+    <form name="formulario" action="procesar.js" method="post">
+        <h3 class="identificaciontitular">Datos empresariales</h3>
         <label for="empresa">Nombre de la empresa:
             <input type="text" name="empresa" id="nombredelaempresa" placeholder="Empresa"><br>
         </label>
@@ -46,7 +50,8 @@
     </form>
 </section>
 <aside>
-    <form name="nombre" action="cliente.js" method="post"><br>
+    <form name="nombre" action="cliente.js" method="post">
+        <h3 class="identificaciontitular">Propietario</h3>
         <label for="empresa">Nombre:
             <input type="text" name="nombre" id="nombre" placeholder="Nombre"><br>
         </label>
@@ -92,11 +97,12 @@
             <input type="radio" name="metododepago" id="efectivo" value="efectivo">Efectivo<br> -->
         </label>
 
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Borrar todo">
-
     </form>
 </aside>
+<div id="botonera">
+    <input id="enviarform" type="submit" value="Enviar">
+    <input id="borrarform" type="reset" value="Borrar todo">
+</div>
 
 </body>
 </html>

@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
         {
             "name": "Launch Edge",
             "request": "launch",
@@ -15,7 +16,7 @@
             "type": "msedge",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\Jordan\\Documents\\factux\\app_factux\\index.html"
+            "file": "c:\\Users\\Jordan\\OneDrive\\Documentos\\factux\\app_factux\\index.html"
         }
     ]
 }
